@@ -58,3 +58,6 @@ debug.sensors=1
 
 # WiFi
 wifi.interface=wlan0
+
+# MK Maintainer
+ro.mk.maintainer=luo2888
