@@ -14,21 +14,9 @@
 # limitations under the License.
 #
 
-# Enhanced NFC
-$(call inherit-product, vendor/mk/config/nfc_enhanced.mk)
+LOCAL_PATH := $(call my-dir)
 
-# Inherit some common MK stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+ifeq ($(TARGET_DEVICE),jsglte)
+include $(call all-makefiles-under,$(LOCAL_PATH))
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/jsglte/device.mk)
-
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := jsglte
-PRODUCT_NAME := mk_jsglte
-PRODUCT_BRAND := samsung
-PRODUCT_MODEL := GT-I9508V
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_GMS_CLIENTID_BASE := android-samsung
-
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=jsglte
+endif

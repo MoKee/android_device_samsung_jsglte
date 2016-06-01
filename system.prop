@@ -1,3 +1,60 @@
 #
 # system.prop for jsglte
 #
+# RIL
+rild.libargs=-d /dev/smd0
+ro.telephony.ril_class=JsglteRIL
+rild.libpath=/system/lib/libsec-ril.so
+ro.ril.telephony.mqanelements=6
+telephony.lteOnGsmDevice=1
+
+# Radio
+persist.data.netmgrd.qos.enable=true
+persist.radio.add_power_save=1
+persist.radio.lte_vrat_report=1
+persist.radio.mode_pref_nv10=1
+
+# Audio
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+ro.qc.sdk.audio.fluencetype=fluence
+mm.enable.smoothstreaming=true
+av.streaming.offload.enable=true
+use.voice.path.for.pcm.voip=true
+audio.offload.multiple.enabled=true
+audio.offload.gapless.enabled=true
+tunnel.audio.encode=true
+media.aac_51_output_enabled=true
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
+
+# Bluetooth  
+ro.qualcomm.bt.hci_transport=smd
+
+# Camera
+camera2.portability.force_api=1
+
+# Display
+ro.hdcp2.rx=tz
+ro.qualcomm.cabl=1
+ro.secwvk=144
+ro.sf.lcd_density=480
+
+# GPS
+persist.gps.qc_nlp_in_use=0
+ro.gps.agps_provider=1
+ro.qc.sdk.izat.premium_enabled=0
+ro.qc.sdk.izat.service_mask=0x0
+
+# perf api
+ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
+
+# NFC
+ro.nfc.port=I2C
+
+# Sensors
+debug.sensors=1
+
+# WiFi
+wifi.interface=wlan0
