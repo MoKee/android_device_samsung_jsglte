@@ -16,10 +16,10 @@ function extract() {
         fi
         if [ "$SRC" = "adb" ]; then
             # Try CM target first
-            adb pull /system/$DEST $2/$DEST
+            cp ~/jsglte/$DEST $2/$DEST
             # if file does not exist try OEM target
             if [ "$?" != "0" ]; then
-                adb pull /system/$FILE $2/$DEST
+                cp ~/jsglte/$FILE $2/$DEST
             fi
         else
             cp $SRC/system/$FILE $2/$DEST

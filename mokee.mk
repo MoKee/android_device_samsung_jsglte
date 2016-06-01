@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Enhanced NFC
 $(call inherit-product, vendor/mk/config/nfc_enhanced.mk)
 
@@ -30,5 +33,3 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-I9508V
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
-
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=jsglte

@@ -185,6 +185,7 @@ lib/libchromatix_s5k6b2yx_default_video.so
 lib/C13QS_libchromatix_imx135_common_1080p_s.so
 lib/hw/sensors.msm8974.so
 lib/hw/camera.vendor.msm8974.so
+lib/modules/wlan.ko
 lib/libchromatix_imx134_preview.so
 lib/C13QS_libchromatix_imx135_common_res3.so
 lib/libchromatix_s5k3l2xx_hfr_120.so
