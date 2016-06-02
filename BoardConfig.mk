@@ -84,7 +84,7 @@ BOARD_PROVIDES_LIBRIL := true
 TARGET_RIL_VARIANT := caf
 
 # Recovery
-#RECOVERY_VARIANT := twrp
+RECOVERY_VARIANT := twrp
 ifeq ($(RECOVERY_VARIANT),twrp)
 #TWRP Specific Build Flags
 TW_THEME := portrait_hdpi
@@ -100,7 +100,7 @@ TW_INCLUDE_CRYPTO := true
 TW_NO_EXFAT_FUSE := false
 TW_NO_EXFAT := false
 GET_RECOVERY_QCOM_RTC_FIX := true
-TW_EXCLUDE_MTP := true
+TW_MTP_DEVICE := "/dev/mtp_usb"
 TARGET_USERIMAGES_USE_F2FS := false
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/twrp.fstab
 # Chinese Support
