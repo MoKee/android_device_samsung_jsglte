@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2017 The Mokee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,4 +21,4 @@
     { "persist.audio.",   AID_SYSTEM,   0 }, \
     { "persist.sys.camera.", AID_MEDIA, 0 }, \
     { "wlan.hdcp2.", AID_MEDIA, 0 },
-#endif /* DEVICE_PERMS_H */
+#endif

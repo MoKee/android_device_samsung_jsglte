@@ -7,7 +7,7 @@ MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
 (cat << EOF) > $MAKEFILE
 #
-# Copyright (C) 2016 The Mokee OpenSource Project
+# Copyright (C) 2017 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -49,7 +49,7 @@ done
 
 (cat << EOF) > ../../../$OUTDIR/$DEVICE-vendor.mk
 #
-# Copyright (C) 2016 The Mokee OpenSource Project
+# Copyright (C) 2017 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -72,7 +72,7 @@ EOF
 
 (cat << EOF) > ../../../$OUTDIR/Android.mk
 #
-# Copyright (C) 2016 The Mokee OpenSource Project
+# Copyright (C) 2017 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -92,7 +92,7 @@ EOF
 
 (cat << EOF) > ../../../$OUTDIR/BoardConfigVendor.mk
 #
-# Copyright (C) 2016 The Mokee OpenSource Project
+# Copyright (C) 2017 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -116,7 +116,7 @@ MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
 (cat << EOF) > $MAKEFILE
 #
-# Copyright (C) 2016 The Mokee OpenSource Project
+# Copyright (C) 2017 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -158,7 +158,7 @@ done
 
 (cat << EOF) > ../../../$OUTDIR/$DEVICE-vendor.mk
 #
-# Copyright (C) 2016 The Mokee OpenSource Project
+# Copyright (C) 2017 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -185,7 +185,7 @@ EOF
 
 (cat << EOF) > ../../../$OUTDIR/BoardConfigVendor.mk
 #
-# Copyright (C) 2016 The Mokee OpenSource Project
+# Copyright (C) 2017 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -204,7 +204,7 @@ EOF
 
 (cat << EOF) > ../../../$OUTDIR/Android.mk
 #
-# Copyright (C) 2016 The Mokee OpenSource Project
+# Copyright (C) 2017 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

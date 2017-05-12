@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 The Mokee OpenSource Project
+# Copyright (C) 2017 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,6 +18,6 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),jsglte)
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 endif

@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2014 The CyanogenMod Project
- * Copyright (c) 2016 The Mokee OpenSource Project
+ * Copyright (c) 2017 The Mokee OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,14 +18,12 @@
 #include <string.h>
 #include <fcntl.h>
 
-#define LOG_TAG "PowerHAL_H_Ext"
+#define LOG_TAG "PowerHAL_JSGLTE_Ext"
 #include <utils/Log.h>
 
-/* touchkeys */
-#define TK_POWER "/sys/class/input/input1/enabled"
-
-/* touchscreen */
-#define TS_POWER "/sys/class/input/input2/enabled"
+#define TOUCHKEY_POWER "/sys/class/input/input1/enabled"
+#define TSP_POWER "/sys/class/input/input2/enabled"
+#define GPIO_KEYS_POWER "/sys/class/input/input13/enabled"
 
 static void sysfs_write(char *path, char *s) {
     char buf[80];
@@ -50,6 +47,7 @@ static void sysfs_write(char *path, char *s) {
 
 void cm_power_set_interactive_ext(int on) {
     ALOGD("%s: %s input devices", __func__, on ? "enabling" : "disabling");
-    sysfs_write(TK_POWER, on ? "1" : "0");
-    sysfs_write(TS_POWER, on ? "1" : "0");
+    sysfs_write(TSP_POWER, on ? "1" : "0");
+    sysfs_write(TOUCHKEY_POWER, on ? "1" : "0");
+    sysfs_write(GPIO_KEYS_POWER, on ? "1" : "0");
 }
