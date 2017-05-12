@@ -1,6 +1,7 @@
 #
 # system.prop for jsglte
 #
+
 # Art
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-swap=false
@@ -96,4 +97,3 @@ wifi.interface=wlan0
 
 # MK Maintainer
 ro.mk.maintainer=luo2888
-
