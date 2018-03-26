@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The Mokee OpenSource Project
+# Copyright (C) 2018 The Mokee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,26 +13,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_COPY_FILES += \
-    device/samsung/jsglte/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
+TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)/twrp
 
 RECOVERY_SDCARD_ON_DATA := true
-RECOVERY_VARIANT := twrp
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/msm_dwc3/f9200000.dwc3/gadget/lun%d/file"
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 162
-TW_EXCLUDE_SUPERSU := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_CRYPTO := true
 TW_MAX_BRIGHTNESS := 255
 TW_MTP_DEVICE := "/dev/mtp_usb"
 TW_NO_EXFAT_FUSE := true
-TARGET_USERIMAGES_USE_F2FS := false
 TW_NO_REBOOT_BOOTLOADER := true
 TW_THEME := portrait_hdpi
-
-# Chinese Support
-TW_EXTRA_LANGUAGES := true
-TW_DEFAULT_LANGUAGE := zh_CN
