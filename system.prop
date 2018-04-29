@@ -11,18 +11,13 @@ persist.audio.fluence.speaker=true
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 ro.qc.sdk.audio.fluencetype=fluence
-use.dedicated.device.for.voip=true
-
-# Audio (Media)
-av.offload.enable=true
-av.streaming.offload.enable=true
 mm.enable.smoothstreaming=true
-media.aac_51_output_enabled=true
-media.aaccodectype=1
-tunnel.audio.encode=true
-audio.offload.buffer.size.kb=32
+av.streaming.offload.enable=true
+use.voice.path.for.pcm.voip=true
+audio.offload.multiple.enabled=true
 audio.offload.gapless.enabled=true
-audio.offload.multiple.enabled=false
+tunnel.audio.encode=true
+media.aac_51_output_enabled=true
 audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
 
