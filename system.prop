@@ -14,15 +14,11 @@ ro.qc.sdk.audio.fluencetype=fluence
 use.dedicated.device.for.voip=true
 
 # Audio (Media)
-av.offload.enable=true
+audio.offload.disable=0
 av.streaming.offload.enable=true
 mm.enable.smoothstreaming=true
 media.aac_51_output_enabled=true
-media.aaccodectype=1
-tunnel.audio.encode=true
 audio.offload.buffer.size.kb=32
-audio.offload.gapless.enabled=true
-audio.offload.multiple.enabled=false
 audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
 
