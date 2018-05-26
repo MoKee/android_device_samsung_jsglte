@@ -94,6 +94,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
+# NFC
+$(call inherit-product, device/samsung/jsglte/nfc/bcm2079x/product.mk)
 
 # Radio
 PRODUCT_PACKAGES += \
