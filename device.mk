@@ -99,8 +99,7 @@ $(call inherit-product, device/samsung/jsglte/nfc/bcm2079x/product.mk)
 
 # Radio
 PRODUCT_PACKAGES += \
-    libsecnativefeature \
-    libshim_cutils_atomic
+    libsecnativefeature
 
 # Ramdisk
 PRODUCT_PACKAGES += \
